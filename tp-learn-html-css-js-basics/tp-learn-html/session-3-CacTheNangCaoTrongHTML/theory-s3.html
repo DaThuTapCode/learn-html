@@ -1,0 +1,147 @@
+BÀI HỌC THỨ 3 CÁC THẺ NÂNG CAO TRONG HTML
+MỤC TIÊU:
+ - Hiểu và sử dụng các thẻ danh sách.
+ - Hiểu và sử dụng các thẻ bảng.
+ - Hiểu và sử dụng các thẻ biểu mẫu.
+
+1. THẺ DANH SÁCH (List Tags)
+HTML cung cấp 3 loại danh sách
+ - Danh sách không thứ tự.
+ - Danh sách có thứ tự.
+ - Danh sách định nghĩa.
+
+ --DANH SÁCH KHÔNG THỨ TỰ (Unordered List)
+ Danh sách không thứ tự được đánh dấu bằng thẻ <ul></ul>
+ và mỗi mục trong danh sách được đánh dấu bằng thẻ <li></li>
+ Ví dụ:
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách không thứ tự</title>
+ </head>
+ <body>
+    <h1>Sở thích của tôi</h1>
+    <ul>
+        <li>Đọc sách</li>
+        <li>Du lịch khám phá</li>
+        <li>Code</li>
+    </ul>
+ </body>
+ </html>
+
+ -- DANH SÁCH CÓ THỨ TỰ (Ordered List)
+ Danh sách có thứ tự được đánh dấu bằng thẻ <ol></ol>
+ và mỗi mục trong danh sách được đánh dấu bằng thẻ <li></li>
+
+ Ví dụ:
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách có thứ tự</title>
+ </head>
+ <body>
+        <h1>Các bước nấu cơm</h1>
+        <ol>
+            <li>Vo gạo qua nước sạch loại bỏ sạn</li>
+            <li>Cho gạo vo vào nồi và đong nước ngập bàn tay úp</li>
+            <li>Bật nồi cơm và nấu!</li>
+        </ol>
+ </body>
+ </html>
+
+ -- DANH SÁCH ĐỊNH NGHĨA (Definition List)
+ Danh sách định nghĩa được sử dụng để tạo các mục từ điển hoặc danh sách thuật ngữ
+  Danh sách định nghĩa được đánh dấu bằng thẻ <dl></dl>
+  và định nghĩa của chúng được đánh dấu bằng thẻ <dd></dd>
+  Ví dụ
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách định nghĩa</title>
+  </head>
+  <body>
+    <h1>Định nghĩa HTLM</h1>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Là ngôn ngữ đánh dấu siêu văn bản</dd>
+        <dt>CSS</dt>
+        <dd>Viết tắt của cụm từ Cascading Style Sheets</dd>
+        <dt>Java script</dt>
+        <dd>Là ngôn ngữ lập trình bậc cao cho trang web</dd>
+    </dl>
+  </body>
+  </html>
+
+  2. THẺ BẰNG (Table Tags)
+  Thẻ băng trong HTML được sử dụng để hiển thị dữ liệu dưới dạng bảng.
+  Bảng được đánh dấu bằng thẻ <table></table>
+  các hàng trong bảng dược đánh dấu bằng thẻ <tr></tr>
+  các ô trong hàng được đánh dấu bằng thẻ <td></td>
+  và các tiêu đề của các cột được đánh dấu bằng thẻ <th></th>
+  Ví dụ:
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thẻ bảng</title>
+  </head>
+  <body>
+    <table border="1">
+        <tr>
+            <th>Tên</th>
+            <th>Môn học</th>
+            <th>Điểm</th>
+        </tr>
+        <tr>
+            <td>Phú</td>
+            <td>Toán</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>Phú</td>
+            <td>Anh</td>
+            <td>9</td>
+        </tr>
+    </table>
+  </body>
+  </html>
+
+  3. THẺ BIỂU MẪU (Form tags)
+Thẻ biểu mẫu trong html được sử dụng để tạo ra các biểu mẫu thu thập dữ liệu 
+từ người dùng 
+Biểu mẫu được đánh dấu bằng thẻ <form action=""></form>
+Các phần tử trong biểu mẫu bao gồm các thẻ như:
+<input type="text">
+<textarea name="" id=""></textarea>
+<select name="" id=""></select>
+<button></button>
+Ví Dụ:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu mẫu</title>
+</head>
+<body>
+    <h1>Biểu mẫu thông tin liên hệ</h1>
+    <form action="">
+        <label for="name">Họ tên:</label>
+        <input type="text" name="name" id="name">
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+        <label for="message">Message:</label>
+        <textarea name="message" id="message"></textarea>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
+4. THỰC HÀNH TẠO 1 TRANG HTML VỚI CÁC THẺ NÂNG CAO
