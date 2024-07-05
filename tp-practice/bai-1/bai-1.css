@@ -1,0 +1,51 @@
+body {
+    width: 80%;
+    margin: auto;
+    height: 100vh; /* Đảm bảo body bao phủ toàn bộ chiều cao màn hình */
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    align-items: center; /* Căn giữa các phần tử con theo chiều ngang */
+    text-align: center;
+}
+
+.card-1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-text h1{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+.main-text span {
+    color: rgb(0, 191, 191);
+}
+
+.main-text p {
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button-zone{
+    justify-content: center;
+    display: flex;
+}
+
+.btn {
+    background-color: black;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 3px;
+    padding: 10px;
+    margin: 10px;
+    width: 110px;
+    cursor: pointer;
+}

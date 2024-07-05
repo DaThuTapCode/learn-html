@@ -1,0 +1,68 @@
+CSS FLEX BOX
+MỤC TIÊU: 
+- Hiểu cơ bản vè flex box;
+- Sử dụng flex box để tạo các bố cục linh hoạt;
+- Thực hành tạo bố cục bằng flex box
+
+1. Flex box là gì;
+Là 1 mô hình bố cục CSS được thiết kế để giúp phân phối không gian giữa các phần tử 
+trong một container, ngay cả khi kích thước của chúng không cố định hoặc không biết trước
+Flex box cung cấp một cách dễ dàng dể tạo các bố cục phức tạp
+
+2. Các thuộc tính chính của Flex box
+Container flex
+Các thuộc tính này được áp dụng cho phần tử cha chứa các phần tử con cần bố cục linh hoạt
+display: flex; biến phần tử thành 1 container flex;
+Ví dụ:
+.container {
+  display: flex;
+} 
+Thuộc tính cho container flex:
+flex-direction: Xác định các hướng của các phần tử con (row, column, row-reverse, column-reverse)
+ví dụ 
+.container{
+  display-direction: row;
+}
+
+justify-content: Căn chỉnh các phần tử con theo chiều ngang 
+(flex-start, flex-end, center, space-between, space-around).
+ví dụ :
+.container {
+    align-items: center;
+}
+
+flex-wrap: Quyết định liệuc ác phần tử con có quấn quanh khi vượt quá chiều dài container hay không
+(nowrap, wrap, wrap-reserve)
+ví dụ :
+.container {
+    flex-wrap: wrap;
+}
+
+
+Thuộc tính cho phần tử con (item flex):
+- flex-grow: Xác định khả năng phần tử mở rộng để lấp đầy không gian trống.
+ví dụ :
+.item {
+  flex-grow: 1;
+}
+- flex-shrink: Xác định khả năng phần tử co lại khi không đủ không gian;
+ ví dụ:
+ .item{
+  flex-shrink: 1;
+ }
+- flex-basis: Xác định kích thước mặc định của phần tử trước khi không gian còn lại được phân phối
+ ví dụ:
+ .item{
+  flex-basis: 100px;
+ }
+align-self: Căn chỉnh phần tử dọc theo trục chính của container (auto, flex-start, flex-end, center, baseline, stretch).
+Ví dụ:
+.item {
+    align-self: center;
+}
+
+
+3. THỰC HÀNH TẠO BỐ CỤC FLEX BOX;
+
+
+

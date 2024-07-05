@@ -1,0 +1,25 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    /* transform: skew(30deg); */
+}
+
+.item {
+    background-color: #4CAF50;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 20px;
+    padding: 20px;
+}

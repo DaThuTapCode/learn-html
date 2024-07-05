@@ -1,0 +1,100 @@
+CSS BOX MODEL VÀ LAYOUT
+
+MỤC TIÊU:
+  Hiểu và áp dụng CSS Box Model;
+ - Sử dụng các thuộc tính bố cục như `margin`, `padding`, `border`,
+ và `width`/`height`.
+ - Hiểu và sử dụng display và position trong CSS
+
+ 1: CSS BOX MODEL
+CSS Box Model là mô hình định nghĩa các phần tử HTML được định vị và định dạng trong
+trang web. Mỗi phần tử được coi là một hộp 
+bao gồm 4 phần content, padding, border, margin.
+ - content: Nội dung của phần tử, bao gồm văn bản hoặc hình ảnh.
+ - padding: Khoảng các giữa nội dung đến đường viền;
+ - border: Đường viền bao quanh phần tử;
+ - margin: Khoảng cách giữa đường viền và các phần tử khác.
+
+ Ví dụ:
+
+ .box {
+   width: 200px;
+   height: 100px;
+   padding: 20px;
+   border: 5px solid black;
+   margin: 15px;
+ }
+
+ 2. Các thuộc tính liên quan đến bôx model;
+  Width và Height
+  width: Chiều rộng của nội dung phần tử;
+  height: Chiều cao của nột dung phần tử;
+  Ví dụ:
+  .box{
+    width: 200px;
+    height: 100px;
+  }
+
+  Padding:
+   padding: Là khoảng cách từ phần tử tới đường viền;
+   padding-top,padding-right, padding-bottom, padding-left : Đặt khoảng cách cho từng phía cụ thể;
+Ví dụ:
+.box{
+  padding: 20px;
+}
+
+  Border:
+    border: Đường viền bao quang phần tử;
+    border-width, border-style, border-color: Đặt lại chiều rộng, kiểu dáng và màu sắc của đường viền
+  Ví dụ 
+  .box {
+    border: 5px solid black;
+  }
+
+  Margin:
+    margin: Là khoảng cách từ đường viền tới các phần tử khác;
+    margin-top, margin-right, margin-bottom, margin-left: Đặt khoảng các cho từng phía cụ thể;
+  Ví dụ:
+  .box {
+    margin: 15px;
+  }
+
+  3: Thuộc tính Display
+  Thuộc tính display xác định cách một phần tử được hiển thị
+   - display: block: Phần tử được hiển thị như một khối chiếm toàn bộ vùng ngang của vùng chứa;
+   - display: inline: Phần tử được hiển thị cùng dòng với các phần tử khác chỉ chiếm không gian cần thiết để hiển thị nội dung;
+   - display: inline-block: Kết hợp tính chất của cả 2 thuộc tính trên;
+   - display: none: Phần tử sẽ không được hiển thị lên trang và không chiếm không gian
+   - display: flex: Phần tử sẽ trở thành 1 container linh hoạt, cho phép sắp xếp con của nó một các linh hoạt theo hàng hoặc cột;
+   - display: grid: Phần tử sẽ trở thành 1 container lưới, cho phép sắp xếp con của nó theo hàng và cột;
+  4: Thuộc tính position
+   - position: static: Mặc định phần tử được định vị theo thứ tự thông thưởng.
+   - position: relative: Phần tử được định vị tương đối với vị trí ban đầu của nó.
+   - position: absolute: Phần tử được định vị tuyệt đối so với phần tử gốc gần nhất có position khác static;
+   - position: fixed: Phần tử được định vị cố dịnh so với cửa sổ trình duyệt;
+
+Ví dụ 
+.static-element {
+    position: static;
+}
+
+.relative-element {
+    position: relative;
+    top: 10px;
+    left: 20px;
+}
+
+.absolute-element {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+}
+
+.fixed-element {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+5: THỰC HÀNH TẠO 1 TRANG HTML SỬ DỤNG BOX MODEL VÀ LAYOUT
+

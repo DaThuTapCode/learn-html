@@ -1,0 +1,107 @@
+GIỐI THIỆU VỀ CSS
+MỤC TIÊU:
+    - Hiểu được CSS là gì và vai trò của nó trong việc thiết kế trang web.
+    - Biết cách thêm CSS vào trang HTML
+    - Hiểu và sử dụng các thuộc tính CSS cơ bản
+1: CSS LÀ GÌ?
+    - CSS (Cascading Style Sheets) là ngôn ngữ để địng dạng và thiết kế các yếu tố trên trang web. CSS giúp bạn kiểm soát
+    màu sắc và kích thước khoảng cách, nhiều thuộc tính khác của các phần tử HTML.
+2: Cách thêm CSS vào trang HTML
+
+Có 3 cách chính để thêm CSS vào trong HTML.
+
+    1. CSS Inline (CSS nội tuyến)
+CSS được đặt bên trong các thẻ HTML bằng thuộc tính style=""
+Ví dụ: 
+<p style="color: blue; font-size: 20px;">Đây là 1 đoạn văn bản màu xanh với chữ to</p>
+
+    2. CSS Internal (CSS Nội bộ)
+CSS được đặt trong thẻ <style></style> trong phần <head></head>
+của tài liệu HTML
+Ví dụ:
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Nội bộ</title> 
+    <style>
+        body{
+            background-color: lightgray;
+        }
+        h1 {
+            color: darkblue;
+        }
+        p {
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+   <h1>Chào mừng đã đến trang web của tôi</h1>
+   <p>Đây là 1 đoạn văn với CSS nội bộ</p>
+</body>
+</html>
+
+    3. CSS BÊN NGOÀI (CSS External)
+- CSS được đặt bên trong một tệp riêng biệt với phần mở rộng .css, và liên kết đến
+tài liệu HTML bằng thẻ <link> trong phần <head>
+- Ví dụ tệp html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External CSS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Chào mừng đến với trang web của tôi</h1>
+    <p>Đây là một đoạn văn với CSS bên ngoài</p>
+</body>
+</html>
+
+3: CÁC THUỘC TÍNH CSS CƠ BẢN
+DƯỚI ĐÂY LÀ 1 SỐ THUỘC TÍNH CSS CƠ BẢN NÊN BIẾT
+1 MÀU SẮC (Color)
+     - color: thay đổi màu của văn bản;
+     - background-color: Thay đổi màu nền của phần tử;
+    Ví dụ: 
+    p {
+        color: red;
+        background-color: yewllow;
+    }
+2 KÍCH THƯỚC VÀ KHOẢNG CÁCH
+      - font-size: Thay đổi kích thước văn bản;
+      - margin: Thay đổi khoảng cách xung quang phần tử;
+      - padding: Thay đổi khoảng cách bên trong phần tử;
+    Ví dụ: 
+    p{
+        font-size: 26px;
+        margin: 10px;
+        padding: 15px;
+    }
+3 Chữ (Font)
+    - font-family: Thay đổi kiểu chữ;
+    - font-weight: Thay đổi độ đậm chữ;
+    Ví dụ:
+    p{
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+    }
+4 BỐ CỤC (Layout)
+    -text-align: Căn chỉnh văn bản trái giữa, phải;
+    -border: Thay đổi viền của phần tử.
+
+    Ví dụ:
+
+
+    p{
+        text-align: center;
+        border: 1px solid black;
+    }
+
+4 THỰC HÀNH TẠO TRANG HTML VÀ ÁP DỤNG CSS
+B1: Tạo tệp html mới;
+B2: Tạo tệp css mới;
+B3: Viết mã;

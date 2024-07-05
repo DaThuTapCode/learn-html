@@ -1,0 +1,54 @@
+CSS GRID
+MỤC TIÊU:
+- Hiểu cơ bản về CSS Grid;
+- Sử dụng CSS Grid để tạo các bố cục phức tạp;
+- Thực hành tạo bố cục bằng CSS Grid;
+
+1. CSS Grid là gì?
+- CSS Grid là một hệ thống bố cục hai chiều cho phép tạo ra các bố cục phức tạp trên trang web.
+ Grid cho phép làm việc với các hàng và cột, đồng thời cung cấp nhiều thuộc tính mạnh mẽ để điều chỉnh
+ các phần tử trong bố cục;
+
+ 2. Các thuộc tính chính của CSS Grid
+ Container Grid
+ - Các thuộc tính này được áp dụng cho phần tử cha chứa các phần tử con cần bố cục linh hoạt;
+
+ - display: grid;
+ biến phần tử thành 1 container grid;
+ ví dụ: 
+ .container{
+    display: grid;
+ }
+
+ Định nghĩa hàng và cột;
+  - Grid-template-columns: định nghĩa các cột trong grid;
+  - grid-template-rows: Định nghĩa các hàng trong grid;
+  Ví dụ:
+  .container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+Khoảng cách giữa các hàng và cột
+ - grid-gap: định nghĩa khoảng cách giữa các hàng và cột;
+ - grid-row-gap: Định nghĩa khoảng các giữa các hàng;
+ - grid-column-gap: Địng nghĩa khoảng cách giữa các cột;
+
+ Ví dụ
+ .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+ }
+
+ Định vị các phần tử con:
+ Grid-column: Xác định ví trí cột của phần tử con;
+ Grid-row: Xác định vị trí hàng của phần tử con;
+
+ Ví dụ:
+ .item{
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+ }
+
+ 3. THỰC HÀNH TẠO BỐ CỤC VỚI CSS GRID;

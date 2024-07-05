@@ -1,0 +1,72 @@
+body{
+    width: 60%;
+    margin: auto;
+}
+
+.container{
+    margin-top: 50px;
+    background-color: rgb(247, 243, 243);
+    text-align: center;
+    padding: 20px;
+    justify-content: center;
+    
+}
+
+
+
+.heading {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.des{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+.letter-zone{
+    justify-content: center;
+    display: flex;
+}
+
+.letter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px; /* Chiều rộng của hình tròn */
+    height: 30px; /* Chiều cao của hình tròn, bằng với chiều rộng để tạo hình tròn */
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50%; /* Tạo hình tròn */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.form-invite {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+}
+
+.form-invite form {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các phần tử con theo cột */
+    align-items: center; /* Căn giữa các phần tử con theo chiều ngang */
+    width: 100%; /* Đảm bảo form chiếm toàn bộ chiều rộng của .form-invite */
+}
+
+.form-invite form input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 60%;
+    margin-bottom: 10px; /* Thêm khoảng cách giữa input và button */
+}
+
+.form-invite form .btn {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(146, 186, 186);
+    font-weight: bold;
+    color: white;
+    width: 40%; /* Đảm bảo nút có cùng chiều rộng với input */
+}
