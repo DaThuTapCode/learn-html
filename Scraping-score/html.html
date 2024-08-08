@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraping Example</title>
+</head>
+<body>
+    <button id="scrapeButton">Scrape Data</button>
+    <pre id="output"></pre>
+
+    <script>
+        document.getElementById('scrapeButton').addEventListener('click', async () => {
+            const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
+            const targetUrl = 'https://vietnamnet.vn/giao-duc/diem-thi/tra-cuu-diem-thi-tot-nghiep-thpt/2023/10008724.html';
+            const url = proxyUrl + targetUrl;
+
+            try {
+                const response = await fetch(url);
+                const text = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html');
+
+                const resultSearch = doc.querySelector('.resultSearch');
+                const soBaoDanh = resultSearch.querySelector('.resultSearch__left-sbd .font-bold').textContent;
+
+                const rows = resultSearch.querySelectorAll('.resultSearch__right table tbody tr');
+
+                let resultText = `Số báo danh: ${soBaoDanh}\n`;
+                rows.forEach(row => {
+                    const mon = row.querySelector('td:nth-child(1)').textContent;
+                    const diem = row.querySelector('td:nth-child(2)').textContent;
+                    resultText += `${mon}: ${diem}\n`;
+                });
+
+                document.getElementById('output').textContent = resultText;
+            } catch (error) {
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

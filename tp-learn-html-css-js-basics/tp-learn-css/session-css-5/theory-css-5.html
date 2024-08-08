@@ -1,0 +1,68 @@
+CSS ANIMATION VÀ TRANSITIONS
+MỤC TIÊU:
+- Hiểu cơ bản về CSS Transitions và Animations
+- Sử dụng Transitions để tạo các hiệu ứng mượt mà khi thay đổi trạng thái phần tử
+- Sử dụng Animations để tạo ra các hiệu ứng động phức tạp;
+
+1. CSS TRANSITIONS
+CSS Transitions cho phép bạn thay đổi các thuộc tính CSS một các mượt mà qua một khoảng thời gian nhất định.
+Cấu trúc cơ bản của Transitions;
+- transition-property: thuộc tính sẽ được chuyển đổi;
+- transition-duration: Thời gian để hoàn thành chuyển đổi;
+- transition-timing-function: Chức năng thời gian cho chuyển đổi (linear, ease, ease-out, ease-in-out).
+- transition-delay: độ trễ trước khi bắt đầu chuyển đổi.
+Ví dụ:
+
+
+.box{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition: background-color 0.5s ease;
+}
+
+.box:hover {
+    background-color: red;
+}
+
+ 2. CSS ANIMATIONS;
+ CSS Animations cho phép tạo các chuỗi hiệu ứng phức tạp hơn bằng các xác định các bước của hoạt ảnh;
+
+ Cấu trúc cơ bản của Animations;
+ - @keyframes: Xác định các bước của hoạt ảnh;
+ - animation-name: Tên của hoạt ảnh;
+ - animation-duration: Thời gian để hoàn thành hoạt ảnh;
+ - animation-timing-function: Chức năng thời gian cho hoạt ảnh;
+ - animation-delay: Độ trễ trước khi bắt đầu hoạt ảnh.
+ - animation-iteration-count: Số lần lặp lại hoạt ảnh.
+ - animation-direction: Hướng của hoạt ảnh (normal. reverse, alternate, alternate-reverse).
+
+ ví dụ 
+ @keyframes example{
+     0%{
+        background-color: blue;
+        left: 0;
+     }
+     5%{
+        background-color: blue;
+        left: 50px;
+     }
+     100%{
+        background-color: blue;
+        left: 100px;
+     }
+ }
+
+ .box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    position: relative;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+ }
+
+
+ 3. Thực hành tạo hiệu ứng động;
+ 
